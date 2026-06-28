@@ -68,7 +68,7 @@ app.use('/hcgi/api', routes());
 app.use('/admin', createPocketBaseAdminProxy());
 
 // 5. Static file serving from apps/web/dist
-app.use(express.static(path.join(__dirname, '../../web/dist')));
+// app.use(express.static(path.join(__dirname, '../../web/dist')));                 // commented here
 
 // 6. Catch-all route for React (Must be LAST route before error handling)
 app.get('*', (req, res) => {
