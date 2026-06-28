@@ -19,7 +19,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-app.set('trust proxy', true);
+app.set('trust proxy', false);
 
 process.on('uncaughtException', (error) => {
 	logger.error('Uncaught exception:', error);
