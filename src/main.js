@@ -71,9 +71,9 @@ app.use('/admin', createPocketBaseAdminProxy());
 // app.use(express.static(path.join(__dirname, '../../web/dist')));                 // commented here
 
 // 6. Catch-all route for React (Must be LAST route before error handling)
-app.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname, '../../web/dist/index.html'));
-});
+// app.get('*', (req, res) => {
+//	res.sendFile(path.join(__dirname, '../../web/dist/index.html'));
+//});
 
 // 7. Error middleware (Must be at the very end to catch errors from any route)
 app.use(errorMiddleware);
